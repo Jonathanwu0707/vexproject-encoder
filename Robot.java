@@ -45,7 +45,7 @@ public class Robot extends TimedRobot {
   @Override
   public void autonomousPeriodic() {
     final double kp=0.3;
-   double error=(finalspeed-encoder.getRate();
+   double error=finalspeed-encoder.getRate();
     
    //final double ki=0.5;
     double dt=Timer.getFPGATimestamp()-lastTimestamp;
